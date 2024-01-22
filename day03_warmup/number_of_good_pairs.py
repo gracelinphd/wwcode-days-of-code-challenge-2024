@@ -37,6 +37,7 @@ class Solution:
         # first try
         # time complexity: O(n^2) -> can be better
         # space complexity: O(1)
+        #
         # for i in range(len(nums)-1):
         #   for j in range(i+1, len(nums), 1):
         #     if nums[i] == nums[j] and i < j:
@@ -44,7 +45,7 @@ class Solution:
 
         # use a counter to cut down time complexity
         # time complexity: O(n)
-        # space complexity: O(1)
+        # space complexity: O(n) for the hashmap
         cnt = {}
         for n in nums:
             if n not in cnt:
